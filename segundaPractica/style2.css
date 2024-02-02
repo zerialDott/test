@@ -16,6 +16,20 @@
 body{
     font-family: 'Quicksand', sans-serif;
 }
+@media(max-width: 550px){
+    .nav-container .logo,
+    .nav-container .cart,
+    .nav-container .icon-menu{
+        display: block;
+    }
+    .create{
+        position: absolute;
+        bottom: 20px;
+    }
+    .nav-container{
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
 .nav-container {
     margin-top: 12px;
     display: flex;
@@ -24,17 +38,20 @@ body{
     width: 100%;
     height: 42px;
 }
-.nav-container .icon-menu{
+.icon-menu{
     margin-left: 22px;
+    display: none;
 }
-.nav-container .cart{
+.cart{
     margin-right: 22px;
+    display: none;
 }
 .logo{
     width: 120px;
+    display: none;
 }
 .account{
-    width: 92%;
+    width: 341px;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -79,10 +96,9 @@ body{
     color: var(--very-light-pink);
 }
 .create{
-    position: absolute;
-    bottom: 20px;
+    margin-top: 48px;
     align-self: center;
-    width: 92%;
+    width: 341px;
     height: 36px;
     background-color: var(--hospital-green);
     border: none;
@@ -91,3 +107,4 @@ body{
     font-size: var(--md);
     font-weight: bold;
 }
+
