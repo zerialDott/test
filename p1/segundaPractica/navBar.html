@@ -49,9 +49,24 @@
         text-decoration: none;
         color: var(--black);
     }
-    .nav-right ul li:nth-child(2){
-        color: var(--very-light-pink);
+    .nav-shoping{
+        position: relative;
     }
+    .nav-shoping div{
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        height: 10px;
+        width: 10px;
+        background-color: var(--hospital-green);
+        border-radius: 50%;
+        font-size:8px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .nav-left{
         display: flex;
         align-items: center;
@@ -93,8 +108,9 @@
             <div class="nav-right">
                 <ul>
                     <li><a href="/">Zerialfan@gmail.com</a></li>
-                    <li><img src="../src/icons/icon_shopping_cart.svg" alt=""></li>
-                    <li>2</li>
+                    <li class="nav-shoping"><img src="../src/icons/icon_shopping_cart.svg" alt="">
+                        <div>2</div>
+                    </li>
                 </ul>
             </div>
         </nav>
